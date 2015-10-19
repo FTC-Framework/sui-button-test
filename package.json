@@ -4,7 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+
+    "clean:dist": "rm -rf ./dist/*",
+    "predist": "npm run clean:dist -s",
+    "dist": "npm run dist:scripts && npm run dist:styles",
+    "dist:scripts": "babel src --out-dir dist",
+    "dist:styles": "node-sass src/index.scss dist/sui-card.css --importer ./scripts/importer.js",
+    "postdist:styles": "cp dist/sui-card.css dist/_sui-card.scss",
+    "prepublish": "npm run dist",
   },
   "author": "",
   "license": "ISC",
