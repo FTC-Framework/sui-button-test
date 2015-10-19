@@ -1,0 +1,133 @@
+$theme: false !default;
+@import 'theme-sui';
+
+// btn font family
+$sui-btn-font-family: $ff-sans-serif !default;
+
+//btn size
+$sui-btn-font-size: $small-font-size !default;
+$sui-btn-medium-font-size: $medium-font-size !default;
+$sui-btn-large-font-size: $large-font-size !default;
+$sui-btn-height: $btn-height !default;
+$sui-btn-medium-height: $btn-medium-height !default;
+$sui-btn-large-height: $btn-large-height !default;
+$sui-btn-line-height: $btn-line-height !default;
+$sui-btn-medium-line-height: $btn-medium-line-height !default;
+$sui-btn-large-line-height: $btn-large-line-height !default;
+$sui-btn-padding-right: $p-base !default;
+$sui-btn-padding-left: $p-base !default;
+$sui-btn-medium-padding-right: $p-medium !default;
+$sui-btn-medium-padding-left: $p-medium !default;
+$sui-btn-large-padding-right: $p-large !default;
+$sui-btn-large-padding-left: $p-large !default;
+
+// btn color
+$sui-btn-color: $c-text !default;
+$sui-btn-color-primary: $c-contrast !default;
+$sui-btn-color-disabled: $c-text-soft !default;
+$sui-btn-color-alert: $c-contrast !default;
+
+// btn border
+$sui-btn-border-color: $c-border-base !default;
+$sui-btn-border-radius: $b-radius-base !default;
+
+// btn background color
+$sui-btn-bg-color: $c-base !default;
+$sui-btn-bg-color-primary: $c-primary !default;
+$sui-btn-bg-color-disabled: $c-soft !default;
+$sui-btn-bg-color-alert: $c-alert !default;
+
+// btn background hover color
+$sui-btn-bg-color-hover: $c-base-variant !default;
+$sui-btn-bg-color-primary-hover: $c-primary-variant !default;
+$sui-btn-bg-color-alert-hover: $c-alert-variant !default;
+
+
+
+/*------------------------------------*\
+   $sui-Btn
+\*------------------------------------*/
+/**
+* Component's vars must be prefixed with sui- and also import global vars defined in src/_vars.scss
+*/
+
+.sui-Btn {
+ display: inline-block;
+ text-decoration: none;
+ text-align: center;
+ border-width: 1px;
+ border-color: $sui-btn-border-color;
+ border-style: solid;
+ font-size: $sui-btn-font-size;
+ font-weight: normal;
+ height: $sui-btn-height;
+ line-height: $sui-btn-line-height;
+ font-family: $sui-btn-font-family;
+ color: $sui-btn-color;
+ padding-top: 0;
+ padding-right: $sui-btn-padding-right;
+ padding-bottom: 0;
+ padding-left: $sui-btn-padding-left;
+ background-color: $sui-btn-bg-color;
+ cursor: pointer;
+ overflow: visible; // fix horizontal space in tag button, ie
+ -webkit-appearance: none;
+    vertical-align: middle;
+ box-sizing: border-box;
+ border-radius: $sui-btn-border-radius;
+ white-space: nowrap;
+
+ &:hover {
+   transition: all 0.3s ease-in-out 0s;
+   background-color: $sui-btn-bg-color-hover;
+ }
+
+ &.is-disabled,
+ &[disabled] {
+   background-color: $sui-btn-bg-color-disabled;
+   color: $sui-btn-color-disabled;
+   cursor: default;
+
+   &:hover {
+     background-color: $sui-btn-bg-color-disabled;
+   }
+ }
+
+ &--medium {
+   font-size: $sui-btn-medium-font-size;
+   height: $sui-btn-medium-height;
+   line-height: $sui-btn-medium-line-height;
+   padding-right: $sui-btn-medium-padding-right;
+   padding-left: $sui-btn-medium-padding-left;
+ }
+
+ &--large {
+   font-size: $sui-btn-large-font-size;
+   height: $sui-btn-large-height;
+   line-height: $sui-btn-large-line-height;
+   padding-right: $sui-btn-large-padding-right;
+   padding-left: $sui-btn-large-padding-left;
+ }
+
+ &--primary {
+   color: $sui-btn-color-primary;
+   background-color: $sui-btn-bg-color-primary;
+
+   &:hover {
+     background-color: $sui-btn-bg-color-primary-hover;
+   }
+ }
+
+ &--alert {
+   color: $sui-btn-color-alert;
+   background-color: $sui-btn-bg-color-alert;
+
+   &:hover {
+     background-color: $sui-btn-bg-color-alert-hover;
+   }
+ }
+ 
+ @if $theme {
+   @include sui-Btn--extend;  
+ }
+}

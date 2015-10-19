@@ -1,6 +1,6 @@
 /**
- * PROPOSAL: This partial should contains partials @imports: vars, generics, core, normalize, ...
- */
+* PROPOSAL: This partial should contains partials @imports: vars, generics, core, normalize, ...
+*/
 
 
 //
@@ -19,14 +19,13 @@
 // * b = border
 
 
-
 // ## Colors
 
 // ### Contrast colors
 
 // Background colors
-$c-bg-light:              #ffffff !default;
-$c-bg-dark:               #000000 !default;
+$c-bg-light:              #ffffff  !default;
+$c-bg-dark:               #000000  !default;
 $c-bg-transparent:        transparent !default;
 
 $c-alert: $c-bg-light;
@@ -39,7 +38,7 @@ $c-gray-lighter:          lighten($c-bg-dark, 60%) !default; // #999
 $c-gray-extralighter:     lighten($c-bg-dark, 80%) !default; // #ccc
 
 // ### Semantic colors
-$c-danger:                #e43731 !default; // Color for negative messages/icons
+$c-danger:                #e43731  !default; // Color for negative messages/icons
 
 
 $c-text: $c-gray-dark;
@@ -62,17 +61,17 @@ $ff-sans-serif:           "Open Sans", Helvetica, Arial, sans-serif !default;
 
 // ### Font sizes
 
-$small-font-size: 			  14px;
-$small-line-height: 		  18px;
+$small-font-size:               14px;
+$small-line-height:           18px;
 
-$base-font-size: 			    16px;
+$base-font-size:                 16px;
 $base-line-height:        20px;
 
-$medium-font-size: 			  18px;
-$medium-line-height: 		  22px;
+$medium-font-size:               18px;
+$medium-line-height:           22px;
 
-$large-font-size: 			  20px;
-$large-line-height: 		  24px;
+$large-font-size:               20px;
+$large-line-height:           24px;
 
 $btn-height:              30px;
 $btn-medium-height:       40px;

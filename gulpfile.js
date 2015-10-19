@@ -10,7 +10,7 @@ var gulp = require('gulp'),
 
 
 var basePath = {
-  src: '.',
+  src: './src',
   dist: './dist'
 };
 
