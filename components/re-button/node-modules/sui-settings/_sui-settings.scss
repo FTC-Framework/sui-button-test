@@ -1,0 +1,92 @@
+/**
+ * PROPOSAL: This partial should contains partials @imports: vars, generics, core, normalize, ...
+ */
+
+
+//
+// # Theme Variables
+// --------------------------------------------------
+// The naming convention used for variables is the
+// [ZenCSSProperties](https://code.google.com/p/zen-coding/wiki/ZenCSSPropertiesEn)
+//
+// Some of the prefixes used:
+// * c = color
+// * ff = font-family
+// * fz = font-size
+// * m = margin
+// * p = padding
+// * lh = line-height
+// * b = border
+
+
+
+// ## Colors
+
+// ### Contrast colors
+
+// Background colors
+$c-bg-light:              #ffffff !default;
+$c-bg-dark:               #000000 !default;
+$c-bg-transparent:        transparent !default;
+
+$c-alert: $c-bg-light;
+
+// Shades of gray
+$c-gray-darker:           lighten($c-bg-dark, 13.5%) !default; // #222
+$c-gray-dark:             lighten($c-bg-dark, 20%) !default;   // #333
+$c-gray-light:            lighten($c-bg-dark, 46.7%) !default; // #777
+$c-gray-lighter:          lighten($c-bg-dark, 60%) !default; // #999
+$c-gray-extralighter:     lighten($c-bg-dark, 80%) !default; // #ccc
+
+// ### Semantic colors
+$c-danger:                #e43731 !default; // Color for negative messages/icons
+
+
+$c-text: $c-gray-dark;
+$c-contrast: $c-bg-light;
+$c-text-soft: $c-gray-light;
+$c-border-base: $c-bg-transparent;
+$c-base: $c-gray-lighter;
+$c-primary: $c-gray-dark;
+$c-soft: $c-gray-extralighter;
+$c-alert: $c-danger;
+$c-base-variant: $c-gray-light;
+$c-primary-variant: $c-bg-dark;
+$c-alert-variant: darken($c-danger,20%);
+
+// ## Typography
+//
+
+// ### Font families
+$ff-sans-serif:           "Open Sans", Helvetica, Arial, sans-serif !default;
+
+// ### Font sizes
+
+$small-font-size: 			  14px;
+$small-line-height: 		  18px;
+
+$base-font-size: 			    16px;
+$base-line-height:        20px;
+
+$medium-font-size: 			  18px;
+$medium-line-height: 		  22px;
+
+$large-font-size: 			  20px;
+$large-line-height: 		  24px;
+
+$btn-height:              30px;
+$btn-medium-height:       40px;
+$btn-large-height:        42px;
+
+
+$btn-line-height:         28px;
+$btn-medium-line-height:  38px;
+$btn-large-line-height:   40px;
+
+// ### Paddings
+$p-base:                  10px;
+$p-medium:                10px;
+$p-large:                 20px;
+
+// ### Borders
+$b-radius-base:           0;

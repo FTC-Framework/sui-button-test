@@ -1,0 +1,71 @@
+/**
+ * PROPOSAL: This partial should contains partials @imports: vars, generics, core, normalize, ...
+ */
+/*------------------------------------*    $sui-Btn
+\*------------------------------------*/
+/**
+ * Component's vars must be prefixed with sui- and also import global vars defined in src/_vars.scss
+ */
+.sui-Btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  border-width: 1px;
+  border-color: #3997d3;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: normal;
+  height: 2.5rem;
+  line-height: 1rem;
+  font-family: "OpenSans", sans-serif;
+  color: #3997d3;
+  padding-top: 0;
+  padding-right: 1rem;
+  padding-bottom: 0;
+  padding-left: 1rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  overflow: visible;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 0.125rem;
+  white-space: nowrap;
+  font-weight: 300;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem; }
+  .sui-Btn:hover {
+    transition: all 0.3s ease-in-out 0s;
+    background-color: #b2d6ed; }
+  .sui-Btn.is-disabled,
+  .sui-Btn[disabled] {
+    background-color: #cccccc;
+    color: #777777;
+    cursor: default; }
+    .sui-Btn.is-disabled:hover,
+    .sui-Btn[disabled]:hover {
+      background-color: #cccccc; }
+  .sui-Btn--medium {
+    font-size: 18px;
+    height: 40px;
+    line-height: 38px;
+    padding-right: 10px;
+    padding-left: 10px; }
+  .sui-Btn--large {
+    font-size: 20px;
+    height: 42px;
+    line-height: 40px;
+    padding-right: 20px;
+    padding-left: 20px; }
+  .sui-Btn--primary {
+    color: #ffffff;
+    background-color: #333333; }
+    .sui-Btn--primary:hover {
+      background-color: #000000; }
+  .sui-Btn--alert {
+    color: #ffffff;
+    background-color: #e43731; }
+    .sui-Btn--alert:hover {
+      background-color: #9b1914; }
+  .sui-Btn:hover {
+    border-color: transparent; }
